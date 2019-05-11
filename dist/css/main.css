@@ -100,7 +100,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -135,6 +135,11 @@ h3 {
 a {
   color: #fff;
   text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 header {
   position: fixed;
@@ -185,8 +190,13 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    padding: 0.5rem 2rem;
+    border-bottom: #eece1a 5px solid;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1; }
+    .about-info .job ul {
+      margin-top: 1rem; }
 
 .projects {
   display: grid;
